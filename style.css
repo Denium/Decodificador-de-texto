@@ -3,9 +3,11 @@
 * {margin:0; padding:0;}
 
 body {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
   background-color: #E5E5E5;
+  overflow: hidden;
 }
 
 .logo__Alura {
@@ -16,8 +18,15 @@ body {
 .apresentacao {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 550px;
+  justify-content:space-around;
+  gap: 350px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
 }
 
 #textarea__apresentacao{
@@ -30,8 +39,9 @@ body {
   font-size: 18px;
   padding: 1% 1%;
   height: 650px;
-  width: 565px;
+  width: 650px;
   background-color: #E5E5E5;
+  resize: none;
 }
 
 .disclaimer {
@@ -57,9 +67,7 @@ body {
   align-items: center;
   margin-left: 250px;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  gap: 20px;
+  gap: 40px;
   margin-top: 10px;
 }
 
@@ -70,6 +78,15 @@ body {
   outline: none;
   padding: 20px 100px;
   border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.criptografarBtn:hover{
+  transition-duration: 0.2s;
+  background-color: rgb(13, 82, 166);
+  color: #ffffff;
+  box-shadow:1px 1px 3px rgb(10, 56, 113);
 }
 
 .descriptografarBtn{
@@ -81,6 +98,15 @@ body {
   border:solid 1px rgb(10, 56, 113);
   padding: 20px 100px;
   border-radius: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.descriptografarBtn:hover{
+  transition-duration: 0.2s;
+  background-color: #a6b0cd;
+  color: #ffffff;
+  box-shadow:1px 1px 3px rgb(10, 56, 113);
 }
 
 .container_resultado{
@@ -88,10 +114,11 @@ body {
   justify-content:right;
   align-items:normal;
   flex-direction:column;
-  height: 700px;
-  background-color: rgb(255, 255, 255);
+  height: 800px;
+  width: 300px;
+  background-color: white;
   border-radius: 25px;
-  padding-top: 120px;
+  padding: 10px 10px;
   margin-right: 10px;
   margin-top: -280px;
   margin-bottom: -220px;
@@ -111,7 +138,7 @@ body {
 
 .homemLupa{
   width: 250px;
-  margin: 70px 10px 10px 10px;
+  padding: 70px 10px 10px 10px;
 }
 
 .nenhuma__mensagem{
@@ -120,7 +147,6 @@ body {
   font-family: "Inter", sans-serif;
   
 }
-/* Lembrar de fazer a altura e a largura do mesmo tamanho da div para quando for clicar para digitar nessa sessão, preencher todo o espaço */
 
 #textarea__resultado{
   display: flex;
@@ -128,10 +154,31 @@ body {
   color: rgb(10, 56, 113);
   border: none;
   outline: none;
-  font-size: 14px;
+  font-size: 18px;
   padding: 1% 1%;
-  height: 50px;
+  height: 650px;
+  width: 280px;
   background-color: white;
+  resize: none;
+  background: transparent;
+}
+
+#btn_copy{ /*selecting by its id*/
+  width: 160px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: large;
+  border-color: #D8DFE8;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: rgb(10, 56, 113);
+}
+
+#btn_copy:hover{
+  transition-duration: 0.2s;
+  background-color: #7b89b0;
+  color: #ffffff;
+  box-shadow:1px 1px 3px rgb(10, 56, 113);
 }
 
 /* Rodapé */
@@ -144,7 +191,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 26px 0px 2px 0px;
+  margin: 26px 0px 0px 0px;
   border: solid 1px rgb(43, 144, 198);
 }
 
