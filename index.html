@@ -24,8 +24,8 @@
         </div>
 
         <div class="containerBtn">
-          <button class="criptografarBtn" onclick="onChangeTextAreaResultado()">Criptografar</button>
-          <button class="descriptografarBtn" onclick="onChangeTextAreaResultado()">Descriptografar</button>
+          <button class="criptografarBtn"onclick="encriptar()">Criptografar</button>
+          <button class="descriptografarBtn" onclick="descriptar()">Descriptografar</button>
         </div>
 
       </section>
@@ -41,14 +41,15 @@
         <div class="containerTextArea">
           <textarea id="textarea__resultado" cols="30" rows="15" maxlength="1512" onkeyup="onChangeTextAreaResultado()"
             placeholder="Digite um texto que você deseja criptografar ou descriptografar." readonly ></textarea>
+            
         </div>
-
-        <button class="result_btn" id="btn_copy">Copiar</button>
+        <button class="result_btn" id="btn_copy" onclick="copiarTexto()">Copiar</button>
       </section>
     </div>
   </main>
 
   <footer class="rodape">
+    <p>Idealizado por Alura: Projeto ONE</p>
     <p>Desenvolvido por Valdenio</p>
   </footer>
   <script src="app.js"></script>
