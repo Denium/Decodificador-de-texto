@@ -14,7 +14,7 @@
   <img class="logo__Alura" src="imagens/Frame 6.png" alt="logo da alura">
   <main class="apresentacao">
     <div class="container">
-      <section>
+      <section class="container__section">
         <textarea id="textarea__apresentacao" cols="30" rows="15" maxlength="1512"
           placeholder="Digite seu texto"></textarea>
 
@@ -29,16 +29,21 @@
         </div>
 
       </section>
+
     </div>
 
     <div class="container_resultado">
       <section class="resultado">
         <img id="imgLupa" class="homemLupa" src="imagens/High quality products 1 1.png"
           alt="Imagem de um homem segurando uma Lupa.">
-        <h3 id="msgNenhuma" class="nenhuma__mensagem">Nenhuma mensagem encontrada</h3>
-        <textarea id="textarea__resultado" cols="30" rows="15" maxlength="1512" onkeyup="onChangeTextAreaResultado()"
-          placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
-        <button  class="result_btn" id="btn_copy">Copiar</button>
+        <h3 id="msgNenhuma" class="nenhuma__mensagem">Nenhuma mensagem <span class="msgEncontrada">encontrada</h3>
+
+        <div class="containerTextArea">
+          <textarea id="textarea__resultado" cols="30" rows="15" maxlength="1512" onkeyup="onChangeTextAreaResultado()"
+            placeholder="Digite um texto que você deseja criptografar ou descriptografar." readonly ></textarea>
+        </div>
+
+        <button class="result_btn" id="btn_copy">Copiar</button>
       </section>
     </div>
   </main>

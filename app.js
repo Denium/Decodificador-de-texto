@@ -9,7 +9,10 @@ function onChangeTextAreaResultado() {
   let imgLupa = document.getElementById("imgLupa");
   let msgNenhuma = document.getElementById("msgNenhuma");
 
-  if (textAreaResultado.value && textAreaResultado.value !== textAreaResultado.defaultValue) {
+  if (
+    textAreaResultado.value &&
+    textAreaResultado.value !== textAreaResultado.defaultValue
+  ) {
     imgLupa.style.display = "none";
     msgNenhuma.style.display = "none";
   } else {
@@ -60,3 +63,12 @@ btn_copy.addEventListener("click", () => {
     console.log("falha");
   }
 });
+
+
+
+
+// Crytografia verdadeira exemplo:
+// var testeCrypto = btoa("Teste de texto");
+// console.log(testeCrypto);
+// var testeDecrypto = atob(testeCrypto);
+// console.log(testeDecrypto);
