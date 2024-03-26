@@ -10,6 +10,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background-color: #e5e5e5;
+  overflow: hidden;
 }
 
 .logo__Alura {
@@ -212,6 +213,11 @@ body {
 /* media query notebook */
 
 @media (max-width: 1440px) {
+
+  body{
+    overflow: hidden;
+  }
+
   .apresentacao {
     margin-right: 30px;
     gap: 1px;
@@ -272,8 +278,8 @@ body {
 /* media query celular */
 @media (max-width: 600px) {
 
-  body{
-    overflow:auto;
+ body{
+    overflow: scroll;
   }
 
   .apresentacao {
@@ -325,13 +331,15 @@ body {
 
   .criptografarBtn {
     margin-top: 20px;
-    padding: 50px 270px;
+    margin-right: 30px;
+    padding: 50px 240px;
     border-radius: 50px;
     font-size: 35px;
   }
 
   .descriptografarBtn {
-    padding: 50px 240px;
+    padding: 50px 210px;
+    margin-right: 30px;
     border-radius: 50px;
     font-size: 35px;
   }
@@ -341,8 +349,8 @@ body {
   }
 
   .container_resultado {
-    margin-left: 433px;
-    width: 670px;
+    margin-left: 390px;
+    width: 620px;
     height: 480px;
     border-radius: 70px;
     margin-bottom: 270px;
@@ -358,21 +366,29 @@ body {
   }
 
   #textarea__resultado {
-    width: 630px;
+    width: 625px;
     height: 430px;
     color: rgb(10, 56, 113);
     font-size: 34px;
+    margin-bottom: 30px;
   }
 
   #textarea__resultado::placeholder {
-    font-size: 40px;
-    width: 630px;
-    padding-left: 15px;
+    font-size: 38px;
+    width: 610px;
+    padding-left: 25px;
+  }
+
+  #btn_copy{
+    margin-top: 1px;
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
   }
 
   .rodape{
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
   }
 
 }
