@@ -273,6 +273,10 @@ body {
 /* media query celular */
 @media (max-width: 600px) {
 
+  body{
+    overflow: scroll;
+  }
+
   .apresentacao {
     flex-direction: column;
   }
