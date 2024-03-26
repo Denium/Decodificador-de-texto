@@ -304,6 +304,7 @@ body {
   }
 
   .disclaimer {
+    margin-top: 20px;
     gap: 15px;
   }
 
@@ -344,6 +345,7 @@ body {
     width: 670px;
     height: 480px;
     border-radius: 70px;
+    margin-bottom: 270px;
   }
 
   #msgNenhuma {
@@ -357,15 +359,20 @@ body {
 
   #textarea__resultado {
     width: 630px;
+    height: 430px;
     color: rgb(10, 56, 113);
     font-size: 34px;
-    writing-mode: none;
   }
 
   #textarea__resultado::placeholder {
     font-size: 40px;
     width: 630px;
     padding-left: 15px;
+  }
+
+  .rodape{
+    width: 100%;
+    font-size: 20px;
   }
 
 }
